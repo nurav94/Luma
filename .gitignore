@@ -1,2 +1,4 @@
 allure-results/
 Screenshots/
+test-output/
+target/
