@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+    
+    <listeners>
+        <listener class-name="utils.TestListener"></listener>
+    </listeners>
+    
+    <!-- Parallel Block -->
+    <test name="Parallel Broken Image and Link Tests" parallel="methods" thread-count="2">
+        <classes>
+            <class name="testcases.FirstTest">
+                <methods>
+                    <include name="checkingBrokenImages"/>
+                    <include name="checkingBrokenLinks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Sequential Block -->
+    <test name="Sequential UI Tests">
+        <classes>
+            <class name="testcases.FirstTest">
+                <methods>
+                    <exclude name="checkingBrokenImages"/>
+                    <exclude name="checkingBrokenLinks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

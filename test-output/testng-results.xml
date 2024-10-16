@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-15T05:49:36 IST" name="Suite" finished-at="2024-09-15T05:50:55 IST" duration-ms="78910">
+    <groups>
+    </groups>
+    <test started-at="2024-09-15T05:49:36 IST" name="Parallel Broken Image and Link Tests" finished-at="2024-09-15T05:50:29 IST" duration-ms="53020">
+      <class name="testcases.FirstTest">
+        <test-method signature="checkingBrokenImages()[pri:3, instance:testcases.FirstTest@7862f56]" started-at="2024-09-15T05:49:36 IST" name="checkingBrokenImages" finished-at="2024-09-15T05:49:38 IST" duration-ms="2106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingBrokenImages -->
+        <test-method signature="checkingBrokenLinks()[pri:4, instance:testcases.FirstTest@7862f56]" started-at="2024-09-15T05:49:36 IST" name="checkingBrokenLinks" finished-at="2024-09-15T05:50:27 IST" duration-ms="50586" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Broken Link: https://softwaretestingboard.com/magento-store-notes/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=notes_promotion - Response code: 406,
+Broken Link: https://softwaretestingboard.com/practice-api-testing-using-magento-2/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=API_Testing_Promo - Response code: 406,
+Broken Link: https://softwaretestingboard.com/write-for-us/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=write4us - Response code: 406,
+Broken Link: https://softwaretestingboard.com/subscribe/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=email_subscribe - Response code: 406]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Broken Link: https://softwaretestingboard.com/magento-store-notes/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=notes_promotion - Response code: 406,
+Broken Link: https://softwaretestingboard.com/practice-api-testing-using-magento-2/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=API_Testing_Promo - Response code: 406,
+Broken Link: https://softwaretestingboard.com/write-for-us/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=write4us - Response code: 406,
+Broken Link: https://softwaretestingboard.com/subscribe/?utm_source=magento_store&utm_medium=banner&utm_campaign=notes_promo&utm_id=email_subscribe - Response code: 406
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.FirstTest.checkingBrokenLinks(FirstTest.java:190)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingBrokenLinks -->
+      </class> <!-- testcases.FirstTest -->
+    </test> <!-- Parallel Broken Image and Link Tests -->
+    <test started-at="2024-09-15T05:49:36 IST" name="Sequential UI Tests" finished-at="2024-09-15T05:50:55 IST" duration-ms="78910">
+      <class name="testcases.FirstTest">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:29 IST" name="startBrowser" finished-at="2024-09-15T05:49:36 IST" duration-ms="7013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="verifyTitle()[pri:0, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:36 IST" name="verifyTitle" finished-at="2024-09-15T05:49:36 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="searchBarEditing()[pri:1, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:36 IST" name="searchBarEditing" finished-at="2024-09-15T05:49:37 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBarEditing -->
+        <test-method signature="searchFunctionality()[pri:2, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:37 IST" name="searchFunctionality" finished-at="2024-09-15T05:49:38 IST" duration-ms="1209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFunctionality -->
+        <test-method signature="addItemsToCart()[pri:5, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:38 IST" name="addItemsToCart" finished-at="2024-09-15T05:49:44 IST" duration-ms="5968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemsToCart -->
+        <test-method signature="editCart()[pri:6, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:44 IST" name="editCart" finished-at="2024-09-15T05:49:55 IST" duration-ms="11492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCart -->
+        <test-method signature="removeItemFromCart()[pri:7, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:49:55 IST" name="removeItemFromCart" finished-at="2024-09-15T05:50:00 IST" duration-ms="4704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromCart -->
+        <test-method signature="allPairTesting()[pri:8, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:00 IST" name="allPairTesting" finished-at="2024-09-15T05:50:29 IST" duration-ms="29196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allPairTesting -->
+        <test-method signature="verifyProductImageColorAgainstSelectedColor()[pri:9, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:29 IST" name="verifyProductImageColorAgainstSelectedColor" finished-at="2024-09-15T05:50:29 IST" duration-ms="152" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.FirstTest.verifyCartItemColor(FirstTest.java:422)
+at testcases.FirstTest.verifyProductImageColorAgainstSelectedColor(FirstTest.java:390)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductImageColorAgainstSelectedColor -->
+        <test-method signature="checkTheTotalAmount()[pri:10, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:30 IST" name="checkTheTotalAmount" finished-at="2024-09-15T05:50:34 IST" duration-ms="4024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheTotalAmount -->
+        <test-method signature="refreshingCart()[pri:11, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:34 IST" name="refreshingCart" finished-at="2024-09-15T05:50:36 IST" duration-ms="2940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshingCart -->
+        <test-method signature="checkoutItemsInTheCart()[pri:12, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:36 IST" name="checkoutItemsInTheCart" finished-at="2024-09-15T05:50:55 IST" duration-ms="18431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutItemsInTheCart -->
+        <test-method is-config="true" signature="endBrowser()[pri:0, instance:testcases.FirstTest@4ce7fffa]" started-at="2024-09-15T05:50:55 IST" name="endBrowser" finished-at="2024-09-15T05:50:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endBrowser -->
+      </class> <!-- testcases.FirstTest -->
+    </test> <!-- Sequential UI Tests -->
+  </suite> <!-- Suite -->
+</testng-results>

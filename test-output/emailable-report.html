@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Parallel Broken Image and Link Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,020</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Sequential UI Tests</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">78,910</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">131,930</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Broken Image and Link Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.FirstTest</td><td><a href="#m0">checkingBrokenLinks</a></td><td rowspan="1">1726359576526</td><td rowspan="1">50586</td></tr><tr><th colspan="4">Parallel Broken Image and Link Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.FirstTest</td><td><a href="#m1">checkingBrokenImages</a></td><td rowspan="1">1726359576526</td><td rowspan="1">2106</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Sequential UI Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.FirstTest</td><td><a href="#m2">verifyProductImageColorAgainstSelectedColor</a></td><td rowspan="1">1726359629745</td><td rowspan="1">152</td></tr><tr><th colspan="4">Sequential UI Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testcases.FirstTest</td><td><a href="#m3">addItemsToCart</a></td><td rowspan="1">1726359578372</td><td rowspan="1">5968</td></tr><tr class="passedeven"><td><a href="#m4">allPairTesting</a></td><td rowspan="1">1726359600547</td><td rowspan="1">29196</td></tr><tr class="passedeven"><td><a href="#m5">checkTheTotalAmount</a></td><td rowspan="1">1726359630007</td><td rowspan="1">4024</td></tr><tr class="passedeven"><td><a href="#m6">checkoutItemsInTheCart</a></td><td rowspan="1">1726359636975</td><td rowspan="1">18431</td></tr><tr class="passedeven"><td><a href="#m7">editCart</a></td><td rowspan="1">1726359584346</td><td rowspan="1">11492</td></tr><tr class="passedeven"><td><a href="#m8">refreshingCart</a></td><td rowspan="1">1726359634032</td><td rowspan="1">2940</td></tr><tr class="passedeven"><td><a href="#m9">removeItemFromCart</a></td><td rowspan="1">1726359595841</td><td rowspan="1">4704</td></tr><tr class="passedeven"><td><a href="#m10">searchBarEditing</a></td><td rowspan="1">1726359576646</td><td rowspan="1">505</td></tr><tr class="passedeven"><td><a href="#m11">searchFunctionality</a></td><td rowspan="1">1726359577155</td><td rowspan="1">1209</td></tr><tr class="passedeven"><td><a href="#m12">verifyTitle</a></td><td rowspan="1">1726359576526</td><td rowspan="1">49</td></tr></tbody>
+</table>
+<h2>Parallel Broken Image and Link Tests</h2><h3 id="m0">testcases.FirstTest#checkingBrokenLinks</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Broken Link: https://softwaretestingboard.com/magento-store-notes/?utm_source=magento_store&amp;utm_medium=banner&amp;utm_campaign=notes_promo&amp;utm_id=notes_promotion - Response code: 406,
+	Broken Link: https://softwaretestingboard.com/practice-api-testing-using-magento-2/?utm_source=magento_store&amp;utm_medium=banner&amp;utm_campaign=notes_promo&amp;utm_id=API_Testing_Promo - Response code: 406,
+	Broken Link: https://softwaretestingboard.com/write-for-us/?utm_source=magento_store&amp;utm_medium=banner&amp;utm_campaign=notes_promo&amp;utm_id=write4us - Response code: 406,
+	Broken Link: https://softwaretestingboard.com/subscribe/?utm_source=magento_store&amp;utm_medium=banner&amp;utm_campaign=notes_promo&amp;utm_id=email_subscribe - Response code: 406
+	at testcases.FirstTest.checkingBrokenLinks(FirstTest.java:190)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.FirstTest#checkingBrokenImages</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Sequential UI Tests</h2><h3 id="m2">testcases.FirstTest#verifyProductImageColorAgainstSelectedColor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+	Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+	Color in cart (black) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false],
+	Color in cart (blue) does not match or is not contained in image URL (https://magento.softwaretestingboard.com/pub/media/catalog/product/cache/b45fda5d42e04db84d57ecfd089c603c/m/j/mj12-orange_main_1.jpg) expected [true] but found [false]
+	at testcases.FirstTest.verifyCartItemColor(FirstTest.java:422)
+	at testcases.FirstTest.verifyProductImageColorAgainstSelectedColor(FirstTest.java:390)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.FirstTest#addItemsToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.FirstTest#allPairTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.FirstTest#checkTheTotalAmount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.FirstTest#checkoutItemsInTheCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.FirstTest#editCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.FirstTest#refreshingCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.FirstTest#removeItemFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.FirstTest#searchBarEditing</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.FirstTest#searchFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testcases.FirstTest#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
